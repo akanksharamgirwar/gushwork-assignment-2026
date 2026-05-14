@@ -42,7 +42,7 @@
 
 body {
   font-family: var(--font-body);
-    background-image: url("/assets/bg-full.png");
+    background-image: url("assets/bg-full.png");
     background-size:cover;
     background-position:center;
     background-repeat:repeat;
