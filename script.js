@@ -128,11 +128,11 @@ function closeMobileMenu(){
  * ==========================================
  */
 const images = [
-  { id: 1, url: "/assets/hero_image.jpg", alt: "HDPE Pipes - View 1" },
-  { id: 2, url: "/assets/image2.jpg", alt: "Pipeline Infrastructure - View 2" },
-  { id: 3, url: "/assets/image3.jpg", alt: "Industrial Piping - View 3" },
-  { id: 4, url: "/assets/image4.webp", alt: "Pipeline System - View 4" },
-  { id: 5, url: "/assets/image5.jpg", alt: "Modern Pipes - View 5" }
+  { id: 1, url: "assets/hero_image.jpg", alt: "HDPE Pipes - View 1" },
+  { id: 2, url: "assets/image2.jpg", alt: "Pipeline Infrastructure - View 2" },
+  { id: 3, url: "assets/image3.jpg", alt: "Industrial Piping - View 3" },
+  { id: 4, url: "assets/image4.webp", alt: "Pipeline System - View 4" },
+  { id: 5, url: "assets/image5.jpg", alt: "Modern Pipes - View 5" }
 ];
 
 // DOM Elements
@@ -449,14 +449,14 @@ renderVersatileCards();
  * ==========================================
  */
 const hdpeProcessData = [
-  { title: "Raw Material", heading: "High-Grade Raw Material Selection", description: "Vacuum sizing tanks ensure precise outer diameter while internal pressure maintains perfect roundness and wall thickness uniformity.", points: ["PE100 grade material", "Optimal molecular weight distribution"], picture: "/assets/hdpe-process.svg" },
-  { title: "Extrusion", heading: "Advanced Extrusion Process", description: "State-of-the-art extrusion technology ensures consistent quality and optimal material properties.", points: ["Precision temperature control", "Uniform material flow"], picture: "/assets/hdpe-process.svg" },
-  { title: "Cooling", heading: "Controlled Cooling System", description: "Advanced cooling technology maintains structural integrity and dimensional accuracy.", points: ["Water bath cooling", "Temperature monitoring"], picture: "/assets/hdpe-process.svg" },
-  { title: "Sizing", heading: "Precision Sizing Process", description: "Vacuum sizing ensures exact diameter specifications and wall thickness.", points: ["Automated sizing control", "Quality verification"], picture: "/assets/hdpe-process.svg" },
-  { title: "Quality Control", heading: "Comprehensive Quality Testing", description: "Multiple quality checkpoints ensure every pipe meets international standards.", points: ["Pressure testing", "Dimensional inspection"], picture: "/assets/hdpe-process.svg" },
-  { title: "Marking", heading: "Product Identification", description: "Clear marking system for traceability and compliance verification.", points: ["Standard markings", "Batch tracking codes"], picture: "/assets/hdpe-process.svg" },
-  { title: "Cutting", heading: "Precision Cutting Process", description: "Automated cutting ensures accurate lengths and clean edges.", points: ["Length precision", "Clean cut edges"], picture: "/assets/hdpe-process.svg" },
-  { title: "Packaging", heading: "Protective Packaging", description: "Careful packaging ensures safe transportation and storage.", points: ["Protective wrapping", "Secure bundling"], picture: "/assets/hdpe-process.svg" }
+  { title: "Raw Material", heading: "High-Grade Raw Material Selection", description: "Vacuum sizing tanks ensure precise outer diameter while internal pressure maintains perfect roundness and wall thickness uniformity.", points: ["PE100 grade material", "Optimal molecular weight distribution"], picture: "assets/hdpe-process.svg" },
+  { title: "Extrusion", heading: "Advanced Extrusion Process", description: "State-of-the-art extrusion technology ensures consistent quality and optimal material properties.", points: ["Precision temperature control", "Uniform material flow"], picture: "assets/hdpe-process.svg" },
+  { title: "Cooling", heading: "Controlled Cooling System", description: "Advanced cooling technology maintains structural integrity and dimensional accuracy.", points: ["Water bath cooling", "Temperature monitoring"], picture: "assets/hdpe-process.svg" },
+  { title: "Sizing", heading: "Precision Sizing Process", description: "Vacuum sizing ensures exact diameter specifications and wall thickness.", points: ["Automated sizing control", "Quality verification"], picture: "assets/hdpe-process.svg" },
+  { title: "Quality Control", heading: "Comprehensive Quality Testing", description: "Multiple quality checkpoints ensure every pipe meets international standards.", points: ["Pressure testing", "Dimensional inspection"], picture: "assets/hdpe-process.svg" },
+  { title: "Marking", heading: "Product Identification", description: "Clear marking system for traceability and compliance verification.", points: ["Standard markings", "Batch tracking codes"], picture: "assets/hdpe-process.svg" },
+  { title: "Cutting", heading: "Precision Cutting Process", description: "Automated cutting ensures accurate lengths and clean edges.", points: ["Length precision", "Clean cut edges"], picture: "assets/hdpe-process.svg" },
+  { title: "Packaging", heading: "Protective Packaging", description: "Careful packaging ensures safe transportation and storage.", points: ["Protective wrapping", "Secure bundling"], picture: "assets/hdpe-process.svg" }
 ];
 
 const hdpeButtons = document.querySelectorAll(".hdpe-step-button");
@@ -482,7 +482,7 @@ function renderHdpeSection(indexValue) {
   
   selectedItem.points.forEach((pointText) => {
     const listItem = document.createElement("li");
-    listItem.innerHTML = `<img src="/assets/CheckCircle.svg" alt=""> ${pointText}`;
+    listItem.innerHTML = `<img src="assets/CheckCircle.svg" alt=""> ${pointText}`;
     fragment.appendChild(listItem);
   });
   
